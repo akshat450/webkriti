@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Contacts" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <style>
+            .row1::after{
+                content:"";
+                display:table;
+                clear:both;
+            }
+            .row2 ::after{
+                content:"";
+                display:table;
+                clear:both;
+            }
+            
+            .column1 {
+                float:left;
+                width:20%;
+            }
+            .column2 {
+                float:left;
+                width:60%;
+            }
+            .column3 {
+                float: left;
+                width:20%;
+            }
+            .column-gap {
+                column-count:3;
+                column-gap:40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row1">
+            <div class="column1">
+                <p>Here the restaurant logo</p>
+            </div>
+            <div class="column2">
+                <h1>Restaurant 1</h1>
+                <p>Fast Food</p><br>
+                <p>Address of Restaurant</p><br>
+                <div class="column-gap">
+                ⭐4.0 45Mins ₹300fortwo
+                </div>
+            </div>
+            <div class="column3">
+                <h1>OFFERS</h1>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="column1">
+                <ul>
+                    <li>Recommended</li>
+                    <li>Combos</li>
+                    <li>Sandwiches</li>
+                    <li>Cookies and Deserts</li>
+                    <li>Beverages</li>
+                </ul>
+            </div>
+            <div class="column2">
+                <h1>Recommended</h1>
+                <p>Dishes with images</p>
+            </div>
+            <div class="column3">
+                <h1>Card Empty</h1>
+            </div>
+        </div>
+    </body>
