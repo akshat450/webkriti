@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Contacts" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <style>
+            body {
+            background-image:url(../Webkriti/CSS/homebackgroundnew.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-attachment:scroll; 
+            background-position: center;
+            font-family: sans-serif;
+            }
+            header {
+            text-align: left;
+            }
+            .restaurant-cards-container {
+            display: flex;
+            flex-direction: row; 
+            justify-content:center;
+            }
+            .card-box {
+            border: 2px solid black;
+            height: 500x;
+            width: 25%;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            background-color: white;
+            }
+            .food {
+            border-radius: 10%;
+            margin: 10px;
+            height: 300px;
+            width: 300px;
+            }
+            .Restaurant-column {
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+            }
+            .Restaurant-row{
+            display: flex;
+            flex-direction: row;
+            margin: 15px;
+            }
+            .address {
+            font-size:80%;
+            margin:0px;
+            color: #0f0f0f;
+            }
+            footer {
+            background-color: #D1C4E9;
+            margin-top:-10px;
+            margin-left:-40px;
+            margin-bottom:-40px;
+            margin-right:-8px;
+            padding: 20px 0px 20px 0px;
+            text-align: center;
+            color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 style="color:whitesmoke">Food ordering comoany name and logo</h1>
+        </header>
+        <div class="restaurant-cards-container">
+            <!-- Card container 1-->
+            <div class="card-box" style="background-image: url(../Webkriti/CSS/plainfor11.jpg);">
+                <div class="Restaurant-column">
+                    <div class="Restaurant-row">
+                        <img src="../Webkriti/CSS/food_picture_01.jpg" alt="food_picture_01" class="food"/>
+                    </div>
+                    <div class="Restaurant-column">
+                        <span style="color:blue; font-size:xx-large"><b>Restaurant-1</b></span>
+                        <span style="color:white"><b>Fast Food</b></span>
+                    </div>
+                    <div class="Restaurant-row">
+                        <div class="Restaurant-column">
+                            <span style="color:whitesmoke;background-color: green;"><b>⭐4.0</b></span>
+                        </div>
+                        <div class="Restaurant-column">
+                            <span style="color:white"><b>45 Mins</b></span>
+                        </div>
+                        <div class="Restaurant-column">
+                            <span style="color:white"><b>₹300 for two</b></span>
+                        </div>
+                    </div>
+                    <div class="Restaurant-column" style="text-align: center;">
+                        <a href="#"><b>Know More</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Card container 2-->
+            <div class="card-box" style="background-image: url(../Webkriti/CSS/plainfor22.jpg);">
+                <div class="Restaurant-column">
+                    <div class="Restaurant-row">
+                        <img src="../Webkriti/CSS/food_picture_02.jpg" alt="food_picture_02" class="food"/>
+                    </div>
+                    <div class="Restaurant-column">
+                        <span style="color:turquoise; font-size:xx-large"><b>Restaurant-2</b></span>
+                        <span><b>North-Indian</b></span>
+                    </div>
+                    <div class="Restaurant-row">
+                        <div class="Restaurant-column">
+                            <span style="color:whitesmoke; background-color: green;"><b>⭐4.2</b></span>
+                        </div>
+                            <div class="Restaurant-column">
+                                <span><b>40 Mins</b></span>
+                            </div>
+                            <div class="Restaurant-column">
+                                <span><b>₹150 for one</b></span>
+                            </div>
+                    </div>
+                    <div class="Restaurant-column" style="text-align: center;">
+                        <a href="#"><b>Know More</b></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card container 3-->
+            <div class="card-box" style="background-image: url(../Webkriti/CSS/plainfor33.jpg);">
+                <div class="Restaurant-column">
+                    <div class="Restaurant-row">
+                        <img src="../Webkriti/CSS/food_picture_03.jpg" alt="food_picture_03" class="food"/>
+                    </div>
+                    <div class="Restaurant-column">
+                        <span style="color:hotpink; font-size:xx-large"><b>Restaurant-3</b></span>
+                        <span><b>South-Indian</b></span>
+                    </div>
+                    <div class="Restaurant-row">
+                        <div class="Restaurant-column">
+                            <span style="color:whitesmoke; background-color: orangered;"><b>⭐3.9</b></span>
+                        </div>
+                        <div class="Restaurant-column">
+                            <span><b>35 Mins</b></span>
+                        </div>
+                        <div class="Restaurant-column">
+                            <span><b>₹500 for four</b></span>
+                        </div>
+                    </div>
+                    <div class="Restaurant-column" style="text-align: center;">
+                        <a href="#"><b>Know More</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <h5>Our Address</h5>
+                <address>
+                    Indian Institute<br>
+                    of Information Technology,<br>
+                    Gwalior[M.P]<br>
+                </address>
+            </div>
+        </footer>
+    </body>
+</html>
