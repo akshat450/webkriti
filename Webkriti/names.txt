@@ -1,0 +1,74 @@
+fast foods
+1.Aloo chaat
+2.Aloo tikki
+3.Aloor Chop
+4.Chole bhature
+5.Dahi puri
+6.Dahi vada
+7.Dhokla
+8.Dosa
+9.Kachori
+10.Masala dosa
+11.Masala puri
+12.Mathri
+13.Misal pav
+14.Pakora
+15.Panipuri
+16.Papad
+17.Papri chat
+18.Pav bhaji
+19.Pohay
+20.Sabudana Khichadi
+21.Sabudana vada
+22.Samosa
+23.Sev puri
+
+north Indian
+1.Aloo Matar Sabji
+2.Mixed Vegetable Curry
+3.malai kofta
+4.maatar panner
+5.kaju kari 
+6.palak paneer
+7.saahi paneer
+8.butter paneer masala
+9.jeera rice
+10.dal tadka
+11.chana masala
+12.dal makhni
+13.aalo paratha
+14.sev tamatar
+15.shahi gobi
+16.mushroom masala
+17.dum aalo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

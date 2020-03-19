@@ -1,0 +1,225 @@
+html,body{
+	padding: 0;
+	margin: 0;
+	height:100vh;
+}
+body{
+	padding: 10px auto;
+	margin: 0px auto;
+	font-family: sans-serif;
+	padding-bottom: 200px;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+.abc{
+	min-height: 100vh;
+	position: relative;
+}
+.container{
+	min-height: 100%;
+	position: relative;
+}
+.loginbox{
+	width: 400px;
+	height:250px;
+	padding:40px;   /*top,right,bottom,left*/
+	background:#191919;
+	text-align: center;
+	border-radius: 24px;
+	display:flex;
+	flex-direction: row;
+}
+.loginbox input[type="text"],.loginbox input[type="password"]{
+	border:0;
+	background:none;
+	display:block;
+	margin: 20px auto;
+	text-align:center;
+	border: 2px solid #3498db;
+	padding:14px 10px;
+	width:200px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+}
+.loginbox input[type="text"]:focus,.loginbox input[type="password"]:focus{
+	width:280px;
+	border-color:#2ecc71;
+}
+.loginbox input[type="submit"]{
+	border:0;
+	background:none;
+	display:block;
+	margin: 20px auto;
+	text-align:center;
+	border: 2px solid #2ecc71;
+	padding:14px 40px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+	cursor: pointer;
+}
+.loginbox input[type="submit"]:hover{
+	background:#2ecc71;
+}
+.form-card-container{
+	display: flex;
+	flex-direction: row; 
+	justify-content:center;
+}
+.card-box {
+	height: 500px;
+	width: 40%;
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	background-color: white;
+}
+.box{
+	width: 400px;
+	height:250px;
+	padding:40px;   /*top,right,bottom,left*/
+	background:#191919;
+	text-align: center;
+	display:flex;
+	flex-direction: row;
+	border-radius: 24px;
+}
+.box input[type="text"],.box input[type="password"]{
+	border:0;
+	background:none;
+	display:block;
+	margin: 20px auto;
+	text-align:center;
+	border: 2px solid #3498db;
+	padding:14px 10px;
+	width:200px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+}
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+	width:280px;
+	border-color:#2ecc71;
+}
+.box input[type="submit"]{
+	border:0;
+	background:none;
+	display:block;
+	margin: 20px auto;
+	text-align:center;
+	border: 2px solid #2ecc71;
+	padding:14px 40px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+	cursor: pointer;
+}
+.box input[type="submit"]:hover{
+	background:#2ecc71;
+}
+#user{
+	width: 100px;
+	height:100px;
+	border-radius:50%;
+	position:absolute;
+	top:300px;
+	left: 21%;
+}
+#user2{
+	width: 100px;
+	height:100px;
+	border-radius:50%;
+	position:absolute;
+	top:300px;
+	left: 62%;
+}
+.loginbox h1{
+	color:white;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: center;
+}
+.box h2{
+	color:white;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.header {
+	text-align: left;
+	background-color: white;
+	background-image: none;
+	height: 10px;
+}
+.main{
+	padding: 70px 30px 70px 30px;
+	margin: 0px auto;
+	background: #9575CD;
+	color: floralwhite;
+}
+.a1{
+	margin: 0px auto;
+	padding: 0px auto;
+}
+.a2{
+	align-self:center;
+}
+.company{
+	margin-left: 170px;
+	border-radius: 10%;
+	height:150px;
+	width:200px;
+	position: absolute;
+	left:1000px;
+	top:10px;
+}
+.logo{
+	margin-left: 250px;
+	border-radius: 10%;
+	height:100px;
+	width:120px;
+	position: absolute;
+	left:10px;
+	top:775px;
+}
+.footer {
+	bottom:0;
+	width:100%;
+	color:black;
+	height:200px;
+	background: #D1C4E9;
+	z-index:-1;
+}
+.footer .footer-content{
+	display:flex;
+}
+.footer .footer-content .footer-section{
+	flex:1;
+	padding:25px;
+}
+.address {
+	text-align: center;
+	font-size:100%;
+	margin:0px;
+	color: #0f0f0f;
+}
+.phone {
+	text-align:center;
+	margin-left: 20px;
+	font-size:100%;
+	color:#0f0f0f;
+}
+.line {
+	display: block;
+	width: 24px;
+	height: 3px;
+	background-color: #686b78;
+	margin: 18px auto;
+}

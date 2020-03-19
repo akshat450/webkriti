@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Contacts" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Spice Darbar</title>
+
+        <style>
+            .row1::after{
+                content:"";
+                display:table;
+                clear:both;
+            }
+            .row1{
+                background-color: #393f4d;
+                color :white;
+                margin-top:-25px;
+                margin-left:-10px;
+                margin-bottom:25px;
+                margin-right:-8px;
+                padding: 0px 0px 0px 0px;
+            }
+            .row2 ::after{
+                content:"";
+                display:table;
+                clear:both;
+            }
+            
+            .column1 {
+                float:left;
+                width:25%;
+            }
+            .column2 {
+                float:left;
+                width:50%;
+            }
+            .column3 {
+                float: right;
+                width:18%;
+            }
+            .col {
+                color: inherit;
+                font-size: 14px;
+                font-weight: 300;
+                transition: opacity .2s ease-in-out;
+                top: 47px;
+                width: 100%;
+            }
+            .check {
+                z-index: 1;
+            }
+            .star {
+                display:inline-block;
+            }
+            .mins {
+                display:inline-block;
+            }
+            .rupee {
+                display:inline-block;
+            }
+            .column-gap {
+                column-count:3;
+                column-gap:40px;
+            }
+            .restaurant1-cards-container {
+            display: flex;
+            flex-direction: row; 
+            justify-content:center;
+            }
+            .Restaurant1-column {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            }
+            .Restaurant1-row{
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            }
+            .food {
+            border-radius: 10%;
+            margin: 10px;
+            height: 200px;
+            width: 200px;
+            }
+            .company{
+                margin-left: 50px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                border-radius: 10%;
+                height:200px;
+                width:275px;
+            }
+            .card-box {
+            height: 10x;
+            width: 30%;
+            margin: 0px;
+            display: flex;
+            align-items:row;
+            flex-direction:initial;
+            background-color: white;
+            }
+            em{
+                display:inline-block;
+                font-weight: bolder;
+                animation:mover 6s linear;
+                animation-iteration-count: 3;
+            }
+            @keyframes mover{
+                0%{
+                    text-shadow: 0 0 30px rgba(0,0,0,0);
+                }
+                50%{
+                    text-shadow: 0 0 30px rgba(0,0,0,0.30);
+                    transform:translateY(30px);
+                }
+                100%{
+                    text-shadow: 0 0 30px rgba(0,0,0,0);
+                }
+            }
+            em:nth-child(1){
+                animation-delay: 0s;
+            }
+            em:nth-child(2){
+                animation-delay: 0.5s;
+            }
+            em:nth-child(3){
+                animation-delay: 1s;
+            }
+            em:nth-child(4){
+                animation-delay: 1.5s;
+            }
+            em:nth-child(5){
+                animation-delay: 2.0s;
+            }
+            em:nth-child(6){
+                animation-delay: 2.5s;
+            }
+            em:nth-child(7){
+                animation-delay: 3.0s;
+            }
+            em:nth-child(8){
+                animation-delay: 3.5s;
+            }
+            em:nth-child(9){
+                animation-delay: 4.0s;
+            }
+            em:nth-child(10){
+                animation-delay: 4.5s;
+            }
+            em:nth-child(11){
+                animation-delay: 5.0s;
+            }
+            em:nth-child(12){
+                animation-delay: 5.5s;
+            }
+            #a3{
+                list-style: none;
+            }
+            #a3 li a{
+                color:black;
+                text-decoration: none;
+            }
+            #b1{
+                list-style: none;
+            }
+            #playlist{
+            list-style: none;
+            }
+            #playlist li a{
+                color:black;
+                text-decoration: none;
+            }
+            #playlist .current-song a{
+                color:blue;
+            }
+            .likeplaceholder{
+                color:#93959f;
+                margin-top: 15px;
+                font-size:16px;
+                font-weight:300px;
+                max-width:218px;
+            }
+            .offer{
+                display:block;
+                box-sizing: inherit;
+                border:1px solid #bec0c8;
+                position:relative;
+                top:0px;
+                right:20px;
+                transform:translateZ(0);
+                transition:transform.2s; 
+            }
+            .off{
+                margin-top: 15px;
+                width:60px;
+                height:60px;
+            }
+            .btn{
+                border: 1px solid black;
+                background:none;
+                padding: 5px 5px;
+                font-size:15px;
+                font-family:"sans-serif";
+                cursor:pointer;
+                transition:0.8s;
+                position: absolute;
+            }
+            .btn1{
+                color:black;
+            }
+            .btn1:hover{
+                color:#3498db;
+            }
+            .btn::before{
+                content:"";
+                position:absolute;
+                left:0;
+                width:100%;
+                height:0%;
+                background:#3498db;
+                z-index: -1;
+                transition:0.8s;
+            }
+            .btn1::before{
+                top:0;
+                border-radius: 0 0 50% 50%;
+            }
+            .btn1:hover::before{
+                height:180%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row1">
+            <div class="column1">
+                <img src="Logo/Spice Darbar.jpeg" class="company">
+            </div>
+            <div class="column2 check">
+                <h1 class="animation">
+                <em>S</em>
+                <em>p</em>
+                <em>i</em>
+                <em>c</em>
+                <em>e</em>
+                <em> </em>
+                <em>D</em>
+                <em>a</em>
+                <em>r</em>
+                <em>b</em>
+                <em>a</em>
+                <em>r</em>
+                </h1>
+                <p>North-Indian</p><br>
+                <p>Shop No. 5, Near The City Center,Gwalior</p><br>
+                <div class="col">
+                    <span>
+                        <span class="star">
+                        </span>
+                        ⭐4.2  |
+                    </span>
+                    <span>
+                        <span class="mins">
+                        </span>
+                        40 Mins   |
+                    </span>
+                    <span class="rupee">
+                        <span>
+                            ₹
+                            150
+                        </span>
+                        for one
+                    </span>                     
+                </div>
+                <p></p>
+            </div>
+            <div class="column3">
+                <h1>OFFERS</h1>
+                <div class="offer">
+                    <p style="text-align: center; margin-top: -10px;"><img src="Logo/offer.png" class="off">No  Offers Available Currently.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="column1">
+                <ul id="a3">
+                    <li> <a href="#b1">Recommended</li></a>
+                    <li><a href="#b2">Others</li></a>
+                    <li><a href="#b3">Roti</li></a>
+                </ul>
+                <audio src="" controls id="audioPlayer">
+                    Sorry, your browser doesn't support html5!
+                </audio>
+                <ul id="playlist">
+                    <li class="current-song"><a href="./extracted audio/Most Epic Music Ever- -The Wolf And The Moon- by BrunuhVille_high_quality.mp3">The Wolf And The Moon</a></li>
+                    <li><a href="./extracted audio/Hans+Zimmer+-+Interstellar+Theme+(Live+in+Prague)_high_quality.mp3">Interstellar Theme</a></li>
+                    <li><a href="extracted audio/Hans+Zimmer+-+S.T.A.Y.+(Madis+Remix)+Interstellar+Theme+(2015)_high_quality.mp3">STAY</a></li>
+                    <li><a href="./extracted audio/Most Beautiful Music Ever- -Everdream- by Epic Soul Factory_high_quality.mp3">Everdream</a></li>
+                    <li><a href="./extracted audio/Hans+Zimmer+-+First+Step+(Interstellar+OST)++-+8D+Audio_high_quality.mp3">First Step</a></li>
+                    <li><a href="./extracted audio/Theory+of+Everything+-+Ending+Scene+Music+(The+Cinematic+Orchestra+-+Arrival+of+the+birds)_high_quality.mp3">Theory of Everything</a></li>
+                    <li><a href="./extracted audio/Warriors - Season 2020 Cinematic - League of Legends (ft. 2WEI and Edda Hayes)_high_quality.mp3">Warriors</a></li>
+                </ul>
+                <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+                <script src="audioPlayer.js"></script>
+                <script>
+                    // loads the audio player
+                    audioPlayer();
+                </script>          
+            </div>
+            <div class="column2">
+                <h1 id="b1">Recommended</h1>
+                <div class="restaurant1-cards-container">
+                    <!-- Card container 1-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/dal tadka.jpg" alt="Dal Tadka" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Dal Tadka</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black; "><b>₹80</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card container 2-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/dum aalo.jpg" alt="Dum Aalo" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Dum Aalo</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black;"><b>₹120</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card container 3-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/Jeera Rice.jpg" alt="Jeera Rice" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Jeera Rice</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black;"><b>₹75</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card container 4-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/malai kofta.jpg" alt="Malai Kofta" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Malai Kofta</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black;"><b>₹130</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 id="b2">Others</h1>
+                <div class="restaurant1-cards-container">
+                    <!-- Card container 5-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/aalo matar.jpg" alt="Aalo Matar" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Aalo Matar</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black; "><b>₹90</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card container 6-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/Aloo Paratha.jpg" alt="Aloo Paratha" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Aloo Paratha</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black;"><b>₹40</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card container 7-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/chana masala.jpg" alt="Chana Masala" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Chana Masala</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black;"><b>₹85</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card container8-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/Dal Makhani.jpg" alt="Dal Makhani" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Dal Makhani</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black;"><b>₹95</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant1-cards-container">
+                    <!-- Card container 9-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/Kaju curry.jpg" alt="Kaju curry" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Kaju curry</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black; "><b>₹105</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card container 10-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/matar paneer.jpg" alt="Matar Paneer" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Matar Paneer</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black;"><b>₹110</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card container 11-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/mix veg curry.jpg" alt="Mix Veg Curry" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Mix Veg Curry</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black;"><b>₹75</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card container 12-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/mushroom masala.jpg" alt="Mushroom Masala" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Mushroom Masala</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black;"><b>₹100</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurant1-cards-container">
+                    <!-- Card container 13-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/palak paneer.jpg" alt="Palak Paneer" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Palak Paneer</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black; "><b>₹125</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card container 14-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/Paneer Butter Masala.jpg" alt="Paneer Butter Masala" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Paneer Butter Masala</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black;"><b>₹145</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card container 15-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/Sev Tamatar.jpg" alt="Sev Tamatar" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Sev Tamatar</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black;"><b>₹115</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card container 16-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/Shahi Paneer.jpg" alt="Shahi Paneer" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Shahi Paneer</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black;"><b>₹125</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 id="b3">Roti</h1>
+                <div class="restaurant1-cards-container">
+                    <!-- Card container 1-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/Tandoori Roti.jpg" alt="Tandoori Roti" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Tandoori Roti</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black; "><b>₹15</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card container 2-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/Tawa-Roti.jpg" alt="Tawa-Roti" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Tawa-Roti</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black;"><b>₹12</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card container 3-->
+                    <div class="card-box">
+                        <div class="Restaurant1-column">
+                            <div class="Restaurant1-row">
+                                <img src="../Webkriti/north indian/Naan.jpg" alt="Naan" class="food"/>
+                            </div>
+                            <div class="Restaurant1-column">
+                                <span style="color:black; font-size:xx-large"><b>Naan</b></span>
+                                <span style="color:black"><b>North-Indian</b></span>
+                            </div>
+                            <div class="Restaurant1-row">
+                                <div class="Restaurant1-column">
+                                    <span style="color:black;"><b>₹40</b></span>
+                                </div>
+                                <div class="Restaurant1-column">
+                                    <button  class="btn btn1" type="submit">ADD To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column3">
+                <h1>Card Empty</h1>
+                <div class="likeplaceholder">
+                    I Can Afford, you can Afford but the nation can't afford. So Please avoid wastage of food.
+                </div>            
+            </div>
+        </div>
+    </body>
+</html>
