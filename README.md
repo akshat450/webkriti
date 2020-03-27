@@ -2,7 +2,7 @@
 *Food Ordering Site*
 
 ## PROJECT DESCRIPTION
-This Project is based on the food ordering. The Site Name is Cherry Tree. >As you read the name fast, it prounonces as "Charity",>and this is the principle of our company that we collect food from every restaurant in the night and distribute it amoung the poors.
+This Project is based on the food ordering. The Site Name is Cherry Tree. >#As you read the name fast, it prounonces as "Charity",and this is the principle of our company that we collect food from every restaurant in the night and distribute it amoung the poors.
 This Project is simply based on the ordering the food online in which any user can order the food through online from the particular list of restaurants.
 
 ## FEATURES
