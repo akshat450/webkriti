@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Vast+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap" rel="stylesheet">
+    <title>Adding Dishes</title>
+    <style>
+        body{
+            margin: 0px auto;
+            padding: 0px auto;
+            background-image: url(../Webkriti/CSS/homebackground111.jpg);
+            background-repeat:repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size:cover;
+        }
+        .form-card-container{
+            display: flex;
+            flex-direction: row; 
+            justify-content:center;
+        }
+        header {
+            text-align: left;
+            background-color: white;
+            background-image: none;
+            height: 80px;
+        }
+        .main{
+            padding: 70px 30px 70px 30px;
+            margin: 0px auto;
+            background: #9575CD;
+            color: floralwhite;
+        }
+        .a1{
+            margin: 0px auto;
+            padding: 0px auto;
+        }
+        .a2{
+            align-self:center;
+        }
+        .company{
+            margin-left: 170px;
+            border-radius: 10%;
+            height:175px;
+            width:250px;
+            position: absolute;
+            left:1000px;
+            top:20px;
+        }
+        .loginbox{
+            width: 400px;
+            height:250px;
+            padding:40px;   /*top,right,bottom,left*/
+            background:transparent;
+            text-align: center;
+            border-radius: 24px;
+            display:flex;
+            flex-direction: row;
+        }
+        .loginbox input[type="text"]{
+            border:0;
+            background:none;
+            display:block;
+            margin: 20px auto;
+            text-align:center;
+            border: 2px solid #3498db;
+            padding:14px 10px;
+            width:200px;
+            outline:none;
+            color:white;
+            border-radius:24px;
+            transition:0.25s;
+        }
+        .loginbox input[type="text"]:focus{
+            width:280px;
+            border-color:#2ecc71;
+        }
+        .loginbox input[type="submit"]{
+            border:0;
+            background:none;
+            display:block;
+            margin: 20px auto;
+            text-align:center;
+            border: 2px solid #2ecc71;
+            padding:14px 40px;
+            outline:none;
+            color:white;
+            border-radius:24px;
+            transition:0.25s;
+            cursor: pointer;
+        }
+        .loginbox input[type="submit"]:hover{
+            background:#2ecc71;
+        }
+        .card-box {
+            height: 400px;
+            width: 40%;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        #user{
+            width: 100px;
+            height:100px;
+            border-radius:50%;
+            position:absolute;
+            top:270px;
+            left: 43%;
+        }
+    </style>
+</head>
+<body>
+    <header class="main">
+        <div class="a1">
+            <h1 style="font-family: 'Vast Shadow', cursive ;  font-style: itali">Cherry Tree</h1>
+            <p style="font-family: 'Amiri', serif; font-style: bold italic; font-size: large; font-weight: 500;">We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+        </div>
+        <div class="a2">
+           <a href="home.html"> <img src="./Logo/Cherry Tree.jpeg" class="company"></a>
+        </div>
+    </header>
+    <div class="form-card-container">
+        <div class="card-box">
+            <div class="loginbox">
+                <h1 style="color:white;"> Add Dishes </h1>
+                <form name="myform" method="post" action="/login">
+                    <div>
+                        <label>
+                            <input type="text" name="username" id="username" placeholder="Enter Dish Name">
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <label>
+                            <input type="text" name="ruppes" id="password" placeholder="Enter Price">
+                        </label>             
+                    </div>
+                    <div>
+                        <input type="submit" name="submit" value="ADD">
+                    </div>		
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

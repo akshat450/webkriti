@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Contacts" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Vast+Shadow&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap" rel="stylesheet">
+        <title>Different Restaurants Names </title>
+
+        <style>
+            body {
+            margin: 0px auto;
+            padding: 0px auto;
+            font-family: sans-serif;
+            }
+            header {
+            text-align: left;
+            background-color: white;
+            background-image: none;
+            height: 80px;
+            }
+            .a1{
+            margin: 0px auto;
+            padding: 0px auto;
+            }
+            .a2{
+                align-self:center;
+            }
+            .restaurant-cards-container {
+            background-color: rgb(1, 16, 17);
+            display: flex;
+            flex-direction: row; 
+            justify-content:center;
+            }
+            .card-box {
+            border: 2px solid black;
+            height: 500x;
+            width: 25%;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            background-color: white;
+            }
+            .food {
+            border-radius: 10%;
+            margin: 10px;
+            height: 300px;
+            width: 300px;
+            }
+            .Restaurant-column {
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+            font-family:monospace;
+            font-size: large;
+            }
+            .Restaurant-row{
+            display: flex;
+            flex-direction: row;
+            margin: 15px;
+            }
+            .address {
+            font-size:80%;
+            margin:0px;
+            color: #0f0f0f;
+            }
+            .phone {
+                font-size:80%;
+                margin:0px;
+                margin-left: 100px;
+                color:black;
+                text-align: left;
+                align-content: center;
+            }
+            .footer {
+                font-family: 'Gentium Basic', serif;
+                font-weight: 500;
+                bottom:0;
+                width:100%;
+                color:black;
+                height:200px;
+                background: #D1C4E9;
+                z-index:-1;
+            }
+            .footer .footer-content{
+                display:flex;
+            }
+            .footer .footer-content .footer-section{
+                flex:1;
+                padding:25px;
+            }
+            .address {
+                text-align: center;
+                font-size:100%;
+                margin:0px;
+                color: #0f0f0f;
+            }
+            .phone {
+                text-align:center;
+                margin-left: 20px;
+                font-size:100%;
+                color:#0f0f0f;
+            }
+            .line {
+                display: block;
+                width: 24px;
+                height: 3px;
+                background-color: #686b78;
+                margin: 18px auto;
+            } 
+            .company{
+            margin-left: 170px;
+            border-radius: 10%;
+            height:175px;
+            width:250px;
+            position: absolute;
+            left:1000px;
+            top:20px;
+            }
+            .main{
+                padding: 70px 30px 70px 30px;
+                margin: 0px auto;
+                background: #9575CD;
+                color: floralwhite;
+            }
+            .logo{
+            margin-left: 250px;
+            border-radius: 10%;
+            height:100px;
+            width:120px;
+            position: absolute;
+            left:10px;
+            top:840px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="main">
+            <div class="a1">
+                <h1 style="font-family: 'Vast Shadow', cursive ;  font-style: itali">Cherry Tree</h1>
+                <p style="font-family: 'Amiri', serif; font-style: bold italic; font-size: large; font-weight: 500;">We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+            </div>
+            <div class="a2">
+               <a href="home.html"> <img src="./Logo/Cherry Tree.jpeg" class="company"></a>
+            </div>
+        </header>
+        <div class="restaurant-cards-container">
+            <!-- Card container 1-->
+            <div class="card-box" style="background-image: url(../Webkriti/CSS/plainfor11.jpg);">
+                <div class="Restaurant-column">
+                    <div class="Restaurant-row">
+                        <a href="./Restaurant1.html"><img src="CSS/food_picture_01.jpg" class="food"></a>
+                    </div>
+                    <div class="Restaurant-column">
+                        <span style="color:rgb(243, 117, 13); font-size:xx-large";><b>Hot Chips</b></span>
+                        <span style="color:white"><b>Fast Food</b></span>
+                    </div>
+                    <div class="Restaurant-row">
+                        <div class="Restaurant-column">
+                            <span style="color:whitesmoke;background-color: green;"><b>⭐4.0</b></span>
+                        </div>
+                        <div class="Restaurant-column">
+                            <span style="color:white"><b>45 Mins</b></span>
+                        </div>
+                        <div class="Restaurant-column">
+                            <span style="color:white"><b>₹300 for two</b></span>
+                        </div>
+                    </div>
+                    <div class="Restaurant-column" style="text-align: center;">
+                        <a href="Restaurant1.html" style="color:white"><b>Know More</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Card container 2-->
+            <div class="card-box" style="background-image: url(../Webkriti/CSS/plainfor22.jpg);">
+                <div class="Restaurant-column">
+                    <div class="Restaurant-row">
+                        <a href="./Restaurant2.html"><img src="CSS/food_picture_02.jpg" class="food"></a>
+                    </div>
+                    <div class="Restaurant-column">
+                        <span style="color:#073002	; font-size:xx-large"><b>Spice Darbar</b></span>
+                        <span><b>North-Indian</b></span>
+                    </div>
+                    <div class="Restaurant-row">
+                        <div class="Restaurant-column">
+                            <span style="color:whitesmoke; background-color: green;"><b>⭐4.2</b></span>
+                        </div>
+                            <div class="Restaurant-column">
+                                <span><b>40 Mins</b></span>
+                            </div>
+                            <div class="Restaurant-column">
+                                <span><b>₹150 for one</b></span>
+                            </div>
+                    </div>
+                    <div class="Restaurant-column" style="text-align: center;">
+                        <a href="Restaurant2.html"><b>Know More</b></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card container 3-->
+            <div class="card-box" style="background-image: url(../Webkriti/CSS/plainfor33.jpg);">
+                <div class="Restaurant-column">
+                    <div class="Restaurant-row">
+                        <a href="./Restaurant3.html"><img src="CSS/food_picture_03.jpg" class="food"></a>
+                    </div>
+                    <div class="Restaurant-column">
+                        <span style="color:rgb(117, 11, 11); font-size:xx-large"><b>Hotel Ramalinga</b></span>
+                        <span><b>South-Indian</b></span>
+                    </div>
+                    <div class="Restaurant-row">
+                        <div class="Restaurant-column">
+                            <span style="color:whitesmoke; background-color: orangered;"><b>⭐3.9</b></span>
+                        </div>
+                        <div class="Restaurant-column">
+                            <span><b>35 Mins</b></span>
+                        </div>
+                        <div class="Restaurant-column">
+                            <span><b>₹500 for four</b></span>
+                        </div>
+                    </div>
+                    <div class="Restaurant-column" style="text-align: center;">
+                        <a href="Restaurant3.html" style="color: red"><b>Know More</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+            
+                <div class="footer-section about">
+                    <h1 style="font-style: italic;">Cherry Tree</h1>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                </div>
+            
+                <div class="footer-section address">
+                    <h5>Our Address</h5>
+                    <div class="line"></div>
+                    Indian Institute<br>
+                    of Information Technology,<br>
+                    Gwalior[M.P]<br>
+                </div>
+            
+                <div class="footer-section phone">
+                    <h5>Phone Number</h5>
+                    1234567891
+                </div>
+    
+            </div>
+        </div>
+    </body>
+</html>
