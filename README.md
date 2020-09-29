@@ -7,7 +7,7 @@ This Project is simply based on the ordering the food online in which any user c
 
 ## FEATURES
 
-* Feature 1: This site offers you an amazing music so that you can listen music while ordering the food. I have seen many food ordering site but this feature is not available on any site.
+* Feature 1: This site offers you an amazing music so that you can listen music while ordering the food. I have seen many food ordering site but this feature is not available on any site and moreover there are many cool features that this website offers ,plz visit the website to relish these features.
 * Feature 2 : Easy to Run the Site. The Design of this Site is such that anyone can easily order the food without worrying so much or finding the dishes here and there.
 * Feature 3 : After Logging in you find an amanzing page where you find the list of the Restaurants. This page is design such that the each box of Restaurant appears like Menu-Card just like in the Restaurant. This is so catchy for the Customers.
 
